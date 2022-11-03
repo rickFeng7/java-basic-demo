@@ -1,2 +1,3 @@
 # Project exclude paths
 /jdk-demo/target/
+/develop-tool-demo/target/
