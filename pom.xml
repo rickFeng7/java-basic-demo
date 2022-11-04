@@ -11,6 +11,8 @@
     <modules>
         <module>jdk-demo</module>
         <module>develop-tool-demo</module>
+        <module>spring-demo</module>
+        <module>design-pattern-demo</module>
     </modules>
 
     <properties>
@@ -26,7 +28,15 @@
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
         <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
         <javax.el.version>3.0.0</javax.el.version>
+        <cglib.version>3.3.0</cglib.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -111,6 +121,14 @@
                 <groupId>org.glassfish</groupId>
                 <artifactId>javax.el</artifactId>
                 <version>${javax.el.version}</version>
+            </dependency>
+
+            <!-- 动态代理 -->
+            <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.version}</version>
             </dependency>
 
         </dependencies>
