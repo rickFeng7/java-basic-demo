@@ -11,8 +11,8 @@
     <modules>
         <module>jdk-demo</module>
         <module>develop-tool-demo</module>
-        <module>spring-demo</module>
         <module>design-pattern-demo</module>
+        <module>spring-demo</module>
     </modules>
 
     <properties>
@@ -29,6 +29,7 @@
         <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
         <javax.el.version>3.0.0</javax.el.version>
         <cglib.version>3.3.0</cglib.version>
+        <spring.version>5.3.23</spring.version>
     </properties>
 
     <dependencies>
@@ -129,6 +130,26 @@
                 <groupId>cglib</groupId>
                 <artifactId>cglib</artifactId>
                 <version>${cglib.version}</version>
+            </dependency>
+
+            <!-- spring -->
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
             </dependency>
 
         </dependencies>
