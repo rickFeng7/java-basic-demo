@@ -41,7 +41,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <!-- lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -49,7 +49,7 @@
                 <scope>provided</scope>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/junit/junit -->
+            <!-- junit -->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -58,19 +58,16 @@
             </dependency>
 
             <!-- 日志 -->
-            <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j-api.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
@@ -78,32 +75,28 @@
             </dependency>
 
             <!-- json -->
-            <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-jsr310</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+            <!-- utils -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
             <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
@@ -111,13 +104,11 @@
             </dependency>
 
             <!-- 字段校验 -->
-            <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate-validator.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/org.glassfish/javax.el -->
             <dependency>
                 <groupId>org.glassfish</groupId>
                 <artifactId>javax.el</artifactId>
@@ -125,7 +116,6 @@
             </dependency>
 
             <!-- 动态代理 -->
-            <!-- https://mvnrepository.com/artifact/cglib/cglib -->
             <dependency>
                 <groupId>cglib</groupId>
                 <artifactId>cglib</artifactId>
@@ -133,19 +123,16 @@
             </dependency>
 
             <!-- spring -->
-            <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
