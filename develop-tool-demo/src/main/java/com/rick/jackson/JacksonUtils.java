@@ -1,7 +1,6 @@
 package com.rick.jackson;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -55,7 +54,7 @@ public class JacksonUtils {
         }
         try {
             return OBJECT_MAPPER.writeValueAsString(obj);
-        } catch (JsonProcessingException e) {
+        } catch (Exception e) {
             log.error("parseStr error", e);
             throw new RuntimeException(e);
         }
@@ -67,7 +66,7 @@ public class JacksonUtils {
         }
         try {
             return OBJECT_MAPPER.readValue(str, clazz);
-        } catch (JsonProcessingException e) {
+        } catch (Exception e) {
             log.error("parseObj error", e);
             throw new RuntimeException(e);
         }
@@ -79,7 +78,7 @@ public class JacksonUtils {
         }
         try {
             return OBJECT_MAPPER.readValue(str, ref);
-        } catch (JsonProcessingException e) {
+        } catch (Throwable e) {
             log.error("parseRef error", e);
             throw new RuntimeException(e);
         }
