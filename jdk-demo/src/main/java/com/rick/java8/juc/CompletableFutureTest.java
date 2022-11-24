@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
  * @author fengrui
  */
 @Slf4j
-public class CompletableFutureDemo {
+public class CompletableFutureTest {
 
     // 1.结果处理
     // 入参：返回结果、异常，无返回值
