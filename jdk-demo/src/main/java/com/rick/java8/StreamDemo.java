@@ -1,4 +1,4 @@
-package com.rick.java8.stream;
+package com.rick.java8;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
